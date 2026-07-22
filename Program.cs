@@ -26,9 +26,4 @@ public class Counter
         Console.WriteLine("Counting from 1 to 100:");
         Console.WriteLine(string.Join(", ", numbers));
     }
-
-    static void Main()
-    {
-        PrintCount();
-    }
 }
