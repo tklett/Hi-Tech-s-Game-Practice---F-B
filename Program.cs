@@ -40,6 +40,37 @@ public class Counter
     }
 
     /// <summary>
+    /// Generates FizzBuzz output from 1 to 100.
+    /// Multiples of 15 are replaced with "FizzBuzz", multiples of 3 with "Fizz", multiples of 5 with "Buzz".
+    /// </summary>
+    public static List<string> CountWithFizzBuzz()
+    {
+        List<string> items = new List<string>();
+
+        for (int i = 1; i <= 100; i++)
+        {
+            if (i % 15 == 0)
+            {
+                items.Add("FizzBuzz");
+            }
+            else if (i % 3 == 0)
+            {
+                items.Add("Fizz");
+            }
+            else if (i % 5 == 0)
+            {
+                items.Add("Buzz");
+            }
+            else
+            {
+                items.Add(i.ToString());
+            }
+        }
+
+        return items;
+    }
+
+    /// <summary>
     /// Prints the fizz-only counting list to the console
     /// </summary>
     public static void PrintCount()
